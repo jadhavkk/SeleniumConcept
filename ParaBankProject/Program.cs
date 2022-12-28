@@ -23,6 +23,6 @@ namespace ParaBankProject {
             driver.FindElement(By.ClassName("button")).Click();
 
             //
-        }
+        }//
     }
 }

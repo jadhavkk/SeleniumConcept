@@ -10,8 +10,14 @@ namespace FacebookProject
         {
             IWebDriver driver = new ChromeDriver();
             driver.Url = "https://www.facebook.com/signup";
-            // driver.FindElement(By.("")).SendKeys("");
-            //               driver.FindElement(By.("")).SendKeys("");
+            //driver.FindElement(By.("")).SendKeys("");
+            //driver.FindElement(By.("")).SendKeys("");
+            //driver.FindElement(By.("")).SendKeys("");
+           // driver.FindElement(By.("")).SendKeys("");
+            //driver.FindElement(By.("")).SendKeys("");
+            //driver.FindElement(By.("")).SendKeys("");
+            //driver.FindElement(By.("")).SendKeys("");
+            //driver.FindElement(By.("")).SendKeys("");
 
         }
     }
