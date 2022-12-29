@@ -8,7 +8,9 @@ namespace ParaBankProject {
         public static void Main(String[] args)
         {
             IWebDriver driver = new ChromeDriver();
-           driver.Url = "https://parabank.parasoft.com/parabank/register.htm";
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+            driver.Url = "https://parabank.parasoft.com/parabank/register.htm";
             driver.FindElement(By.Id("customer.firstName")).SendKeys("Sakshi");
             driver.FindElement(By.Id("customer.lastName")).SendKeys("Joshi");
             driver.FindElement(By.Id("customer.address.street")).SendKeys("Pune");

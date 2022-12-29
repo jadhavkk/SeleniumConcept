@@ -5,13 +5,21 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumConcept", "SeleniumConcept\SeleniumConcept.csproj", "{6E45949B-AED1-4000-92A4-948FFE11FFF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParaBankProject", "ParaBankProject\ParaBankProject.csproj", "{9351F0DE-268D-4A50-A9F5-F02D4FDBCD64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParaBankProject", "ParaBankProject\ParaBankProject.csproj", "{9351F0DE-268D-4A50-A9F5-F02D4FDBCD64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoGuru", "DemoGuru\DemoGuru.csproj", "{6A60A618-7D62-4CB0-B363-2AED75EB8564}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoGuru", "DemoGuru\DemoGuru.csproj", "{6A60A618-7D62-4CB0-B363-2AED75EB8564}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookProject", "FacebookProject\FacebookProject.csproj", "{EB601850-5685-4199-89BA-ABA4A48D165E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacebookProject", "FacebookProject\FacebookProject.csproj", "{EB601850-5685-4199-89BA-ABA4A48D165E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesForceProject", "SalesForceProject\SalesForceProject.csproj", "{0F320FA4-74DB-43F2-AF21-43492B1DC185}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesForceProject", "SalesForceProject\SalesForceProject.csproj", "{0F320FA4-74DB-43F2-AF21-43492B1DC185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoToProject", "GoToProject\GoToProject.csproj", "{6D70C006-2EE3-4594-B999-00C43A90F6E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediBuddyProject", "MediBuddyProject\MediBuddyProject.csproj", "{72A9C7F1-E756-4FD2-91FD-8C4A076E6238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NassaCom", "NassaCom\NassaCom.csproj", "{C2C26A9B-CD8A-4922-B5E0-C853C0F91209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracleProject", "OracleProject\OracleProject.csproj", "{3EA8DC6A-A505-4E3A-8B10-BCE4957B2D30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,22 @@ Global
 		{0F320FA4-74DB-43F2-AF21-43492B1DC185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F320FA4-74DB-43F2-AF21-43492B1DC185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F320FA4-74DB-43F2-AF21-43492B1DC185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D70C006-2EE3-4594-B999-00C43A90F6E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D70C006-2EE3-4594-B999-00C43A90F6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D70C006-2EE3-4594-B999-00C43A90F6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D70C006-2EE3-4594-B999-00C43A90F6E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72A9C7F1-E756-4FD2-91FD-8C4A076E6238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A9C7F1-E756-4FD2-91FD-8C4A076E6238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A9C7F1-E756-4FD2-91FD-8C4A076E6238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A9C7F1-E756-4FD2-91FD-8C4A076E6238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2C26A9B-CD8A-4922-B5E0-C853C0F91209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C26A9B-CD8A-4922-B5E0-C853C0F91209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C26A9B-CD8A-4922-B5E0-C853C0F91209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C26A9B-CD8A-4922-B5E0-C853C0F91209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EA8DC6A-A505-4E3A-8B10-BCE4957B2D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA8DC6A-A505-4E3A-8B10-BCE4957B2D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA8DC6A-A505-4E3A-8B10-BCE4957B2D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA8DC6A-A505-4E3A-8B10-BCE4957B2D30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
