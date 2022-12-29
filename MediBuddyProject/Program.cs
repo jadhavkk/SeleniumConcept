@@ -22,11 +22,11 @@ namespace MediBuddyProject
             driver.FindElement(By.XPath("//input[@type='checkbox']")).Click();
             driver.FindElement(By.XPath("//button[@type='submit']")).Click();
 
-           string actual_Text = driver.FindElement(By.XPath("")).Text;
+           string actual_Text = driver.FindElement(By.XPath("//*[contains(text(),'incorrect")).Text;
            Console.WriteLine(actual_Text);
 
 
-
+            //
 
 
 

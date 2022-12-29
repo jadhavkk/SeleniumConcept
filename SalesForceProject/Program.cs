@@ -38,7 +38,7 @@ namespace Maveric.SalesForceProject
             //driver.FindElement(By.XPath("(//div[@class='checkbox-ui'])[1]")).Click();
             driver.FindElement(By.Name("start my free trial")).Click();
              
-
+            //
 
             //
         }
