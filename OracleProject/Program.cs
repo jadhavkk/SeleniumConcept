@@ -20,11 +20,17 @@ namespace OraclProject
             IWebElement element = driver.FindElement(By.XPath(" //h2[contains(text(),'Oracle account sign in')]"));
            string  elemen = element.Text;
             Console.Write(elemen);
-         
-            
+
+            driver.FindElement(By.Id("sso_username")).SendKeys("john");
+            driver.FindElement(By.Id("ssopassword")).SendKeys("john123");
+            driver.FindElement(By.Id("signin_button")).Click();
 
 
-         
+
+
+
+
+
         }
 
     }

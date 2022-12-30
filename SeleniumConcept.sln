@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NassaCom", "NassaCom\NassaC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracleProject", "OracleProject\OracleProject.csproj", "{3EA8DC6A-A505-4E3A-8B10-BCE4957B2D30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumAdvance", "SeleniumAdvance\SeleniumAdvance.csproj", "{1656A4A2-F29D-4350-875C-B770AD3CEC90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{3EA8DC6A-A505-4E3A-8B10-BCE4957B2D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EA8DC6A-A505-4E3A-8B10-BCE4957B2D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EA8DC6A-A505-4E3A-8B10-BCE4957B2D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1656A4A2-F29D-4350-875C-B770AD3CEC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1656A4A2-F29D-4350-875C-B770AD3CEC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1656A4A2-F29D-4350-875C-B770AD3CEC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1656A4A2-F29D-4350-875C-B770AD3CEC90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
