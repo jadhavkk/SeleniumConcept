@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Support.Extensions;
 
 namespace Maveric.SeleniumAdvance
 {
@@ -22,29 +23,48 @@ namespace Maveric.SeleniumAdvance
             driver.Url = " https://www.online.citibank.co.in/";
            driver.FindElement(By.XPath("//a[@class='fancybox-item fancybox-close']")).Click();
             driver.FindElement(By.XPath("//span[@class='txtSign']")).Click();
+            
+            //swtich to 2 tab
             driver.SwitchTo().Window(driver.WindowHandles[1]);
             driver.FindElement(By.XPath("//div[@onclick='ForgotUserID();']")).Click();
+            //// div[contains(text(),'Forgot User ID?')] 
             driver.FindElement(By.LinkText("select your product type")).Click();
             driver.FindElement(By.LinkText("Credit Card")).Click();
             driver.FindElement(By.Id("citiCard1")).SendKeys("4545");
             driver.FindElement(By.Id("citiCard2")).SendKeys("4545");
-            driver.FindElement(By.Id("citiCard3")).SendKeys("8887");
+            //input[name='citiCard2']
+            //driver.FindElement(By.Id("citiCard3")).SendKeys("8887");
             driver.FindElement(By.Id("citiCard4")).SendKeys("9998");
             driver.FindElement(By.Id("cvvnumber")).SendKeys("345");
-            driver.FindElement(By.Id("bill-date-long")).Click();
-            SelectElement month = new SelectElement(driver.FindElement(By.XPath("//select[@class='ui-datepicker-month']")));
-            month.SelectByText("Apr");
-            SelectElement year = new SelectElement(driver.FindElement(By.XPath("//select[@class='ui-datepicker-year']")));
-            year.SelectByText("2022");
-            driver.FindElement(By.LinkText("14")).Click();
-            driver.FindElement(By.XPath("//input[@type='button']")).Click();
-            Thread.Sleep(1000);
-            string textPrint = driver.FindElement(By.XPath("//li[contains(text(),'• Please accept Terms and Conditions ')]")).Text;
-            Console.WriteLine(textPrint);
+            //#cvvnumber
+
+            //date field - approach 1
+            //driver.FindElement(By.Id("bill-date-long")).Click();
+
+            //date fi app-2
+            //click and try to automate-----javascript exexute use
+            
+
+
+            driver.ExecuteJavaScript("document.querySelector('#bill-date-long').value = '14/04/2000'");
 
 
 
+            /*  SelectElement month = new SelectElement(driver.FindElement(By.XPath("//select[@class='ui-datepicker-month']")));
+              month.SelectByText("Apr");
+              SelectElement year = new SelectElement(driver.FindElement(By.XPath("//select[@class='ui-datepicker-year']")));
+              year.SelectByText("2022");
+              driver.FindElement(By.LinkText("14")).Click();
+              driver.FindElement(By.XPath("//input[@type='button']")).Click();
+              Thread.Sleep(1000);
+              string textPrint = driver.FindElement(By.XPath("//li[contains(text(),'• Please accept Terms and Conditions ')]")).Text;
+              Console.WriteLine(textPrint);*/
           
+            //driver.ExecuteJavaScript("document.querySelector("li[contains(text(),'accept Terms')]")).
+
+
+            //date fi app-2
+            //click and try to automate/
 
 
 
