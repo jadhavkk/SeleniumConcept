@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Support.Extensions;
+using OpenQA.Selenium.Interactions;
 
 namespace Maveric.PhpTravels
 {
@@ -23,17 +24,33 @@ namespace Maveric.PhpTravels
             driver.Url = "https://www.phptravels.net/home";
            
             driver.FindElement(By.XPath("(//i[@class='la la-angle-down'])[3]")).Click();
+
             driver.FindElement(By.LinkText("English")).Click();
+
             driver.FindElement(By.XPath("//a[@class='active_flights waves-effect']")).Click();
-            driver.FindElement(By.XPath("//input[@id='autocomplete']")).SendKeys("Los Angeles (LAX)");
-            driver.FindElement(By.XPath("//input[@id='autocomplete2']")).SendKeys("Dallas (DAL)");
-            driver.ExecuteJavaScript(("document.querySelector('#departure').value='2022-05-30';"));
-            driver.FindElement(By.XPath("//a[@class='dropdown-toggle dropdown-btn travellers waves-effect']")).Click();
-            driver.FindElement(By.ClassName(" dropdown-item adult_qty")).Click();
-            driver.FindElement(By.ClassName("(//i[@class='la la-plus'])[1]")).Click();
+
+
+            
+             driver.FindElement(By.XPath("//input[@id='autocomplete']")).SendKeys("LAX");
+            driver.FindElement(By.XPath("//b[text()='LAX']")).Click();
+
+            driver.FindElement(By.XPath("//input[@id='autocomplete2']")).SendKeys("DLM");
+            driver.FindElement(By.XPath("//b[text()='DLM']")).Click();
+
+           
+
+            //driver.FindElement(By.XPath("(//div[@class='autocomplete-result'])[1]")).Click();
+            driver.ExecuteJavaScript(("document.querySelector('#departure').value='2023-01-30';"));
+
+            driver.FindElement(By.XPath("//p[text()='Travellers ']")).Click();
+
+            driver.FindElement(By.XPath("//i[@class='la la-plus']")).Click();
+
+            driver.FindElement(By.XPath("//button[@id='flights-search']")).Click();
 
 
 
+            //driver.Quit();
 
 
 
@@ -48,4 +65,4 @@ namespace Maveric.PhpTravels
 7.  Get the first flight details and print  
 8.  Close the browser*/
 
-//a[@class='dropdown-toggle dropdown-btn travellers waves-effect']
+
